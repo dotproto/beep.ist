@@ -6,13 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beep.ist - Always Be Beeping</title>
   <style>
-    html { height: 100%; }
+    html, body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
     body {
-      /* Image via https://birdcheese.tumblr.com/post/134030028144/say-im-applying-for-a-job-where-i-may-be-helping */
-      background: url(./job_advice.gif) center/contain no-repeat;
+      background: #111;
+      font-family: sans-serif;
+    }
+    #advice {
+      width: 90vmin;
+    }
+    a {
+      color: steelblue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: mediumpurple;
+    }
+    a:active {
+      color: firebrick;
     }
   </style>
 </head>
 <body>
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:100%;">
+    <img id="advice" src="job_advice.gif" alt="Advice for birds seeking jobs">
+    <p>
+      <a id="link" href="https://birdcheese.tumblr.com/post/134030028144/say-im-applying-for-a-job-where-i-may-be-helping" alt="original tumblr post">birdcheese</a>
+    </p>
+  </div>
 </body>
 </html>
